@@ -14,12 +14,15 @@ function (WebMap, MapView, Expand,LayerList, ScaleBar) {
             id: "2559b1d4178444a7beb08f9ddb27ec01"
         }
     });
-
+    
+    // created mapview
     const view = new MapView({
         container: "viewDiv",
         map: webmap,
     });
-    console.log("View: ",view);
+
+    // set view zoom level
+    view.zoom = 9;
     
     // Create LayerList widget - set container to div element
     const layerList = new LayerList({
@@ -27,24 +30,22 @@ function (WebMap, MapView, Expand,LayerList, ScaleBar) {
         container: document.createElement("div"),
     });
         
-    console.log("layerList: ",layerList);
-
     // create expand instance
     const layerListExpand = new Expand({
-        expandIconClass: "esri-icon-layer-list",  // see https://developers.arcgis.com/javascript/latest/guide/esri-icon-font/
-        // expandTooltip: "Expand LayerList", // optional, defaults to "Expand" for English locale
+        // icon used for the expand
+        expandIconClass: "esri-icon-layer-list",
         view: view,
         content: layerList
     });
-    view.ui.add(layerListExpand, "top-right");
-    
     
     const scalebar = new ScaleBar({
         view: view
     });
     
-    view.ui.add(scalebar, "bottom-right");
-    
+    // add UI elements
+    view.ui.add(scalebar, "bottom-left");
+    view.ui.add(layerListExpand, "top-right");
+    //view.ui.add("logoDiv", "bottom-right");
   });
 
  
