@@ -8,7 +8,7 @@ This map shows features along the Mad River Watershed including Mad River and tr
 ![Project Image](./assets/images/screenshot.jpg)
 
 ## About the Application
-This interactive map was built on the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) (current version 4.17) using a webmap built on ArcGIS Online. It uses zoom, and layer control with the ability to toggle layers on/off.
+This interactive map was built on the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) (current version 4.17) using a webmap built on ArcGIS Online. It uses zoom, and layer control with the ability to toggle layers on/off. It can be viewed on GitHub pages [here](https://yooperjb.github.io/Mad_River_Alliance/), and will be live on the Mad River Alliance website soon.
 
 ## Status
-The application was recently converted from the old JavaScript API 3.1 version, to 4.17. New data/layers will be added as they become available. 
+The application was recently converted from the old JavaScript API 3.1 version, to 4.17. New data/layers will be added as they become available.
