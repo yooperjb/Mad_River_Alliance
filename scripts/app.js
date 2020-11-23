@@ -45,7 +45,7 @@ function (WebMap, MapView, Expand,LayerList, ScaleBar) {
     // add UI elements
     view.ui.add(scalebar, "bottom-left");
     view.ui.add(layerListExpand, "top-right");
-    //view.ui.add("logoDiv", "bottom-right");
+    view.ui.add("logoDiv", "bottom-right");
   });
 
  

@@ -9,10 +9,8 @@ html, body, #viewDiv {
     display: none;
 }
 
-/* #logoDiv {
-    padding: 12px;
-    background-color: black;
-    color: pink;
-    text-align: center;
-    width: 100px;
-  } */
+#logoDiv {
+
+    background-color: transparent;
+
+  }
